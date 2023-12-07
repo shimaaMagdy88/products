@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+.col-4{
+    width: calc(100% * (4/12));
+}
+.box{
+    padding: 35px;
+    position: relative;
+}
+.text{
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+    right: 15%;
+    background-color: white;
+    padding: 15px;
+    font-weight: 100;
+}
+.text span{
+    font-size: 20px;
+}
+.text p{
+    padding: 5px 0px;
+    line-height: 1.5;
+}
+.transparent{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    display: none;
+    
+    justify-content: center;
+    align-items: center;
+}
+.transparent .child-img{
+    background-image: url(../images/1.jpg);
+    background-size:cover;
+    height: 500px;
+    width: 600px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+}
+.transparent .child-img i{
+    font-size: 25px;
+    color: white;
+}
+.transparent .child-img #close{
+    position: absolute;
+    top:5%;
+    right: 5%;
+}
+.transparent .child-img i:hover{
+    color:gray;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
